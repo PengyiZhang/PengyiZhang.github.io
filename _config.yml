@@ -1,0 +1,97 @@
+# Site settings
+title: ZhangPY Blog
+SEOTitle: 张朋艺的博客 | ZhangPY Blog
+header-img: img/home-bg.jpg
+email: zhangpybit@gmail.com
+description: "关于Machine Learning、AI、计算机视觉、嵌入式开发、深度学习 | 张朋艺，Deep Learning & Computer Vision Lover，Biomedical Engineering，Algorithm Designer | 这里是 @ZhangPY张朋艺 的个人博客，与你一起见证AI的神奇魅力。"
+keyword: "张朋艺, ZhangPY张朋艺, ZhangPY, ※※※, zhangpypro, @zhangpypro, 张朋艺的博客, ZhangPY Blog, 博客, 个人网站, DSP开发, AI, Computer Vision, ARM-Linux, Machine Learning, Biomedical Engineering"
+url: "https://github.com/PengyiZhang/PengyiZhang.github.io"              # your host, for absolute URL
+baseurl: "https://github.com/PengyiZhang/PengyiZhang.github.io"                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: false
+weibo_username:     iamhuty
+zhihu_username:     ZhangPYi
+github_username:    PengyiZhang
+twitter_username:   Yolo1259156776
+#facebook_username:  ZhangPY
+# linkedin_username:  firstname-lastname-idxxxx
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+disqus_username: zhangpy-club
+
+# Netease setttings
+netease_comment: false
+
+
+
+# Analytics settings
+# Baidu Analytics 
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_domain: https://github.com/PengyiZhang/PengyiZhang.github.io
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "简简单单做人，踏踏实实做事，<br>Talk is cheap, show me the code！"
+sidebar-avatar: /img/visa.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 0              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "ZhangPY",
+        href: "https://github.com/PengyiZhang/PengyiZhang.github.io"
+    },
+    {
+        title: "知彝人行天下",
+        href: "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU3NzQ0MjI1Mw==&scene=124#wechat_redirect"
+    }
+]
