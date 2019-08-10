@@ -1,6 +1,6 @@
  -------
 
-**嗨，我是张朋艺，ZhangPY，起初耕耘在[别人家的博客](http://blog.csdn.net/lg1259156776)，后来决定自己搞起来，活跃在[博客](https://github.com/PengyiZhang/PengyiZhang.github.io)、[微博](weibo.com/iamhuty)、[知乎](https://www.zhihu.com/people/ZhangPYi)、[Twitter](https://twitter.com/ZhangPYi/)、[Github](https://github.com/PengyiZhang)等地带，欢迎来采~~~。**
+**嗨，我是张朋艺，ZhangPY，起初耕耘在[别人家的博客](http://blog.csdn.net/lg1259156776)，后来决定自己搞起来，活跃在[博客](https://pengyizhang.github.io/)、[微博](weibo.com/iamhuty)、[知乎](https://www.zhihu.com/people/ZhangPYi)、[Twitter](https://twitter.com/ZhangPYi/)、[Github](https://github.com/PengyiZhang)等地带，欢迎来采~~~。**
  
 -------
 
@@ -12,7 +12,7 @@
 
 ----
 
-[个人简历-2019]()
+[个人简历-2019](https://pengyizhang.github.io/)
 
 -------
 

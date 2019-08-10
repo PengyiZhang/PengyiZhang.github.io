@@ -1,14 +1,14 @@
 {
     "name": "hux-blog",
     "title": "ZhangPY Blog",
-    "author": "ZhangPY <pyZhangBIT2010@126.com>",
+    "author": "ZhangPY <zhangpybit@gmail.com>",
     "version": "1.7.0",
-    "homepage": "http://zhangpyi.github.io",
+    "homepage": "https://pengyizhang.github.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/zhangpyi/zhangpyi.github.io"
+        "url": "https://github.com/pengyizhang/pengyizhang.github.io"
     },
-    "bugs": "https://https://github.com/zhangpyi/zhangpyi.github.io/issues",
+    "bugs": "https://github.com/pengyizhang/pengyizhang.github.io/issues",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
