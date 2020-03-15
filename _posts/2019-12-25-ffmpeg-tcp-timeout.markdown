@@ -1,7 +1,7 @@
 ---
 layout:       post
-title:        "【阅读笔记】【哲学思考】对迟到现象的哲学思考"
-subtitle:     "由迟到现象引发的哲学思考"
+title:        "【FFMPEG】设置FFMPEG载流为TCP以及设置TIMEOUT"
+subtitle:     "设置FFMPEG载流为TCP以及设置TIMEOUT"
 date:         2019-12-25 12:00:00
 author:       "ZhangPY"
 header-img:   "img/post-bg-os-metro.jpg"
