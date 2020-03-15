@@ -3,18 +3,18 @@
 @(2019-2020年度论文阅读)[超分辨率]
 
 -----------
-![Alt text](./1569582434919.png)
+![Alt text](/img/20200314/1569582434919.png)
 
 Conditional Batch Normalization 的概念来源于这篇文章：[Modulating early visual processing by language](https://papers.nips.cc/paper/7237-modulating-early-visual-processing-by-language.pdf)后来又先后被用在 [cGANs With Projection Discriminator](https://arxiv.org/pdf/1802.05637.pdf) 和[Self-Attention Generative Adversarial Networks](https://arxiv.org/pdf/1805.08318.pdf) 。本文将首先简略介绍 Modulating early visual processing by language ，接着结合 Self-Attention GANs 的 pytorch 代码，详细分析 categorical conditional Batch Normalization 的具体实现。
 
 传统的 Batch Normalization (BN) 公式为：
 
-![Alt text](./1569582585154.png)
+![Alt text](/img/20200314/1569582585154.png)
 条件BN中，scale和bias的系数是把feature输入到一个小神经网络多层感知机，前向传播的网络输出，而不是学习得到的网络参数。由于scale和bias依赖于输入feature这个condition，因此这个改进版本的Batch Normalization叫做`Conditional Batch Normalization`。
 
 ## Modulating early visual processing by language
 这篇文章改进了一个基于图片的问答系统 (VQA: Visual Question Answering)。系统的输入为一张图片和一个针对图片的问题，系统输出问题的答案，如下图所示：
-![Alt text](./1569582434919.png)
+![Alt text](/img/20200314/1569582434919.png)
 
 这类系统通常是这样设计的：一个预训练的图像识别网络，例如 ResNet，用于提取图片特征；一个 sequential 模型，例如 LSTM、GRU 等，用于提取句子的特征，并根据句子预测应该关注图片的什么位置（attention）；将语言特征、由 attention 加权过后的图片特征结合起来，共同输入一个网络，最终输出问题的答案。
 
@@ -24,7 +24,7 @@ Conditional Batch Normalization 的概念来源于这篇文章：[Modulating ear
 具体是如何结合的呢？首先，ResNet 是预训练的网络，用于提取图片特征，因此不能轻易修改里面 filter 的参数。而其中的BN层有两组参数scale和bias，用于对feature map施加缩放和偏置操作。这两个参数量不大，而且从含义上讲可以解释为：强调feature map的某部分channel，忽略另外一些channel。柿子捡软的捏，作者决定通过修改scale和bias的方式，达到有针对性地提取图片部分信息的目的。而修改的方式就是用LSTM提取的句子特征。例如上图，输入的句子问：伞上下颠倒了吗？LSTM 很大概率会提取出关键词：伞，把这个关键词的特征作为条件，输入到多层感知机 (MLP) 中，输出新的权重bias和scale，通过训练，这些权重最后将会有针对性地强调图片特征中与伞有关的channel，而忽略与伞无关的channel。而由于ResNet是预训练网络，即便是里面的BN层的参数，也是轻易不能动的。因此，作者没有直接用MLP的输出作为BN层新的scale和bias，而是作为一个小的增量，加在原来的参数上：
 
 
-![Alt text](./1569583144266.png)
+![Alt text](/img/20200314/1569583144266.png)
 这个想法用最小的代价（只修改了 BN 层参数），在图像的底层 feature 中结合了自然语言信息，取得了很好的表现。相关的代码为：https%3A//github.com/ap229997/Conditional-Batch-Norm/blob/master/model/cbn.py
 
 ## Categorical Conditional Batch Normalization
@@ -95,7 +95,7 @@ def forward(self, input, c, **kwargs):
 
 这个类的实现，对原始 Modulating early visual processing by language 论文做了几点改动：
 
-![Alt text](./1569584148787.png)
+![Alt text](/img/20200314/1569584148787.png)
 
 
 ## 总结
@@ -106,4 +106,4 @@ def forward(self, input, c, **kwargs):
 通过这个微小的改动，我们终于可以愉快地在 conditional generative model 上使用 Batch Normalization 操作，而不必担心不同类别的图片对应不同的映射参数了。
 
 ----
-2019-09-27 张朋艺
+2020-03-14 张朋艺
