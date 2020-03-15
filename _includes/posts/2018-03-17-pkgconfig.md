@@ -122,7 +122,7 @@ PKG_CONFIG_PATH=/opt/gtk/lib/pkgconfig 重启之后： `[root@localhost ~]# echo
 ----------
 
 2018-03-17 21:16
-张朋艺 pyZhangBIT2010@126.com
+张朋艺
 
 
 
