@@ -2,7 +2,7 @@
 layout:       post
 title:        "【红外图像处理】红外成像基本知识"
 subtitle:     "红外成像基本知识"
-date:         2020-03-15 10:02:00
+date:         2020-03-12 10:02:00
 author:       "ZhangPY"
 header-img:   "img/post-bg-os-metro.jpg"
 header-mask:  0.3
