@@ -2,7 +2,7 @@
 layout:       post
 title:        "【计算机视觉】 Image Information"
 subtitle:     "Image Information"
-date:         2020-03-16 15:24:00
+date:         2020-03-16 15:38:00
 author:       "ZhangPY"
 header-img:   "img/post-bg-os-metro.jpg"
 header-mask:  0.3
