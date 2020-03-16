@@ -10,7 +10,7 @@
     </script>
 </head>
 
-# 【计算机视觉】02-Introduction to probability
+# 【计算机视觉】Introduction to probability
 
 标签（空格分隔）： 【图像处理】
 

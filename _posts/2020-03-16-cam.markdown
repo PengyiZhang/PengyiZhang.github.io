@@ -1,8 +1,8 @@
 ---
 layout:       post
-title:        "【计算机视觉】haar features"
-subtitle:     "haar features"
-date:         2020-03-16 15:18:00
+title:        "【计算机视觉】 Image Information"
+subtitle:     "Image Information"
+date:         2020-03-16 15:24:00
 author:       "ZhangPY"
 header-img:   "img/post-bg-os-metro.jpg"
 header-mask:  0.3
@@ -14,7 +14,7 @@ tags:
 
 <!-- Chinese Version -->
 <div class="zh post-container">
-    {% capture about_zh %}{% include posts/2020-03-16-haar-like.md %}{% endcapture %}
+    {% capture about_zh %}{% include posts/2020-03-16-cam.md %}{% endcapture %}
     {{ about_zh | markdownify }}
 </div>
 

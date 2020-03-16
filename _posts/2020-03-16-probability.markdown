@@ -1,7 +1,7 @@
 ---
 layout:       post
-title:        "【计算机视觉】02-Introduction to probability"
-subtitle:     "02-Introduction to probability"
+title:        "【计算机视觉】Introduction to probability"
+subtitle:     "Introduction to probability"
 date:         2020-03-16 15:24:00
 author:       "ZhangPY"
 header-img:   "img/post-bg-os-metro.jpg"
