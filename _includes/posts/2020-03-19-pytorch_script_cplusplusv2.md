@@ -378,3 +378,4 @@ Pytorch的C++端已经接近成熟，C++的预测相比Python端会稍微快一�
 [https://github.com/pytorch/pytorch/issues/13245#issuecomment-435165566](https://github.com/pytorch/pytorch/issues/13245#issuecomment-435165566)  
 [https://github.com/pytorch/pytorch/issues/13898#issuecomment-438657077](https://github.com/pytorch/pytorch/issues/13898#issuecomment-438657077)
 
+[转载 https://oldpan.me/archives/pytorch-c-libtorch-inference](https://oldpan.me/archives/pytorch-c-libtorch-inference)
