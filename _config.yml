@@ -6,7 +6,7 @@ email: zhangpybit@gmail.com
 description: "关于Machine Learning、AI、计算机视觉、嵌入式开发、深度学习 | 张朋艺，Deep Learning & Computer Vision Lover，Biomedical Engineering，Algorithm Designer | 这里是 @ZhangPY张朋艺 的个人博客，与你一起见证AI的神奇魅力。"
 keyword: "张朋艺, ZhangPY张朋艺, ZhangPY, ※※※, zhangpypro, @zhangpypro, 张朋艺的博客, ZhangPY Blog, 博客, 个人网站, DSP开发, AI, Computer Vision, ARM-Linux, Machine Learning, Biomedical Engineering"
 url: "https://pengyizhang.github.io"              # your host, for absolute URL
-baseurl: "/"                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
