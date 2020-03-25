@@ -14,7 +14,7 @@ tags:
 
 <!-- Chinese Version -->
 <div class="zh post-container">
-    {% capture about_zh %}{% include posts/2020-03-19-pytorch_script_cplusplusv3.md %}{% endcapture %}
+    {% capture about_zh %}{% include posts/2020-03-25-MIASSL-explanation.md %}{% endcapture %}
     {{ about_zh | markdownify }}
 </div>
 
