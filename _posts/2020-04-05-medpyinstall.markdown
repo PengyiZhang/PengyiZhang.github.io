@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "【python开发技术】【医学图像处理】MedPy 源码在windows上编译安装说明"
-subtitle:     "进程池pool的使用"
+subtitle:     "MedPy 源码在windows上编译安装说明"
 date:         2020-04-05 08:50:00
 author:       "ZhangPY"
 header-img:   "img/home-bg.jpg"
