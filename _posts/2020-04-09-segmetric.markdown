@@ -3,7 +3,7 @@ layout:       post
 title:        "【计算机视觉】评估语义分割精确度的指标"
 subtitle:     "评估语义分割精确度的指标"
 date:         2020-04-09 20:35:00
-author:       "ZhangPY"
+author:       "ZhongYX"
 header-img:   "img/home-bg.jpg"
 header-mask:  0.3
 catalog:      true
