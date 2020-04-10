@@ -1,0 +1,25 @@
+---
+layout:       post
+title:        "【计算机视觉】pydensecrf在灰度图上的使用"
+subtitle:     "pydensecrf在灰度图上的使用"
+date:         2020-04-10 19:10:00
+author:       "ZhongYX"
+header-img:   "img/home-bg.jpg"
+header-mask:  0.3
+catalog:      true
+multilingual: true
+tags:
+    - 计算机视觉
+---
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+    {% capture about_zh %}{% include posts/2020-04-10-densecrf.md %}{% endcapture %}
+    {{ about_zh | markdownify }}
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    {% capture about_en %}{% include posts/en.md %}{% endcapture %}
+    {{ about_en | markdownify }}
+</div>
