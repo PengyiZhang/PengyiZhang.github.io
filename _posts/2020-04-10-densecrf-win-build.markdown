@@ -2,8 +2,8 @@
 layout:       post
 title:        "【计算机视觉】pydensecrf在windows上进行build的错误"
 subtitle:     "pydensecrf在windows上进行build的错误"
-date:         2020-04-10 21:58:00
-author:       "ZhongYX"
+date:         2020-04-10 22:13:00
+author:       "ZhangPY"
 header-img:   "img/home-bg.jpg"
 header-mask:  0.3
 catalog:      true

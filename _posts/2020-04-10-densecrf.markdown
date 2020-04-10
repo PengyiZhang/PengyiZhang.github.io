@@ -3,7 +3,7 @@ layout:       post
 title:        "【计算机视觉】pydensecrf在灰度图上的使用"
 subtitle:     "pydensecrf在灰度图上的使用"
 date:         2020-04-10 19:10:00
-author:       "ZhongYX"
+author:       "ZhangPY"
 header-img:   "img/home-bg.jpg"
 header-mask:  0.3
 catalog:      true
