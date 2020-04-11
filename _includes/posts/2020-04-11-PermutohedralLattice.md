@@ -100,7 +100,7 @@
 
 #### 算法流程
 
-![](/img/20200411/Figure10.png)
+![](/img/20200411/Figure11.png)
 
 `Enclosing`，集合的封闭。
 
