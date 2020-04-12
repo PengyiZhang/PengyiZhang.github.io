@@ -29,10 +29,20 @@ Weak标签：![](/img/20200412/Figure0.png)
 
 回到这个弱标签本身，提供的训练图像数据集是这样的约定：弱标签虽然很弱，但是却是很讲究的，因为但凡有前景存在的图像它都会至少标注一个像素，而没有前景存在的图像它是不需要标注的。这样就给了一个可以用于抑制背景的惩罚项。那就是对于训练时，判断图像中有没有前景目标，有的话计算partial cross entropy loss，而没有的话则计算对背景的约束项，也就是这半边的损失`loss=-∑(1-t_i)*log(1-p_i)`。从而能够在一定程度上提供对背景的监督，防止前景过于弥散。
 
+对应的训练结果为：
+
+![](/img/20200412/Figure3.png)
 
 
+这里训练效果还是很好地。因为在训练数据集中大约有 `83/1674=0.04958183990442055` 属于全`Negative`的训练样本。`83`张足够提供给样本良好的背景监督，抑制由于`partial label`导致的前景扩张。
 
-其余方法可以尝试 弱监督语义分割的相关技术，比如：[https://github.com/PengyiZhang/MIADeepSSL/tree/master/01_WeaklySupervised](https://github.com/PengyiZhang/MIADeepSSL/tree/master/01_WeaklySupervised)
+## 其它弱监督语义分割技术
+
+上面提出的改进方法比较简单，适用性必须有两个前提：1. 默认含有前景的图像都至少有一个像素的标注，即没有标注的图像全是背景类；2. 数据集中存在一定量的全是背景类的样本，能够用于约束前景的扩张。
+
+若不满足该条件，可能需要尝试其它弱监督语义分割技术。
+
+其余方法可以尝试 弱监督语义分割的相关技术，可以参考：[https://github.com/PengyiZhang/MIADeepSSL/tree/master/01_WeaklySupervised](https://github.com/PengyiZhang/MIADeepSSL/tree/master/01_WeaklySupervised)
 
 
 
