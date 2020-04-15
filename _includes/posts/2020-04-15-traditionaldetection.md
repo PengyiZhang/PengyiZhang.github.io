@@ -72,7 +72,7 @@ hold on;
 plot(hogVisualization);
 ```
 
-![](/img/Figure2.png)
+![](/img/20200415/Figure2.png)
 
 
 
@@ -80,11 +80,11 @@ plot(hogVisualization);
 
 ###### 第一步：计算`x,y`方向梯度
 
-![](/img/Figure3.png)
+![](/img/20200415/Figure3.png)
 
 类似用sobel算子进行的梯度计算：
 
-![](/img/Figure4.gif)
+![](/img/20200415/Figure4.gif)
 
 `Change in X direction(Gx) = 89 – 78 = 11`
 
@@ -92,7 +92,7 @@ plot(hogVisualization);
 
 ###### 第二步：计算梯度的幅度和方向
 
-![](/img/Figure5.png)
+![](/img/20200415/Figure5.png)
 
 `Total Gradient Magnitude =  √[(Gx)2+(Gy)2]` ==> `Total Gradient Magnitude =  √[(11)2+(8)2] = 13.6`
 
@@ -106,21 +106,21 @@ plot(hogVisualization);
 
 方法一：以梯度方向从1-180°，`bin=1`：
 
-![](/img/Figure6.png)
+![](/img/20200415/Figure6.png)
 
 方法二：以梯度方向，`bin=20`
 
-![](/img/Figure7.png)
+![](/img/20200415/Figure7.png)
 
 
 方法三：上面两种均没有将梯度值考虑在内，这次不去统计梯度方向的次数，而是将对应方向的梯度值加进去
 
-![](/img/Figure8.png)
+![](/img/20200415/Figure8.png)
 
 
 方法四：在方法三的基础上，考虑到一个梯度方向可能刚好跨进两边，那么就计算一个根据距离的加权的幅度值：
 
-![](/img/Figure9.png)
+![](/img/20200415/Figure9.png)
 
 这就是HOG特征描述子如何计算梯度方向直方图的。
 
@@ -129,13 +129,13 @@ plot(hogVisualization);
 梯度直方图不是在整幅图像上计算的，而是先把图像分解为8x8的cells，然后带方向的梯度的直方图分别在每个cell中进行统计。
 
 
-![](/img/Figure10.png)
+![](/img/20200415/Figure10.png)
 
 ###### 第四步：在16x16的cell中归一化梯度
 
 因为图像的梯度对于 `overall lighting` 十分敏感，图像中的一些部分与其它部分相比会比较明亮。虽然不能完全消除这种影响，但是能够通过归一化梯度减少光照变化的影响。然后以16x16的大小为block来进行。
 
-![](/img/Figure11.png)
+![](/img/20200415/Figure11.png)
 
 所以一个block中有4个cells，从而构成了36x1的直方图。进行归一化即可。
 
@@ -176,7 +176,7 @@ io.imshow(hog_image)
 
 （6） 对训练好的模型在测试集上进行测试。在测试集的每张图像及其可能的尺度图像上，应用滑动窗口，提取HOG特征，用分类器分类，当输出结果的概率足够大，记录滑动窗口的位置。当扫描完图像，应用非极大值抑制方法剔除重复的检测。
 
-![](/img/Figure1.gif)
+![](/img/20200415/Figure1.gif)
 
 最为典型的两个传统检测方法：
 
