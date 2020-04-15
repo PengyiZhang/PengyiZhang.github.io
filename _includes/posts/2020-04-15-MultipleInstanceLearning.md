@@ -35,6 +35,39 @@
 - `E step`. Estimate the expected value for each latent variable.
 - `M step`. Optimize the parameters of the distribution using maximum likelihood.
 
+这种交替优化的方式十分值得注意NOTICE！！！因为非常有用，将一个看上去无法完成的任务，通过先明确一个状态A，去估计另一个状态B，然后再用状态B去优化状态A。这种方法在一定的情况下是能够保证收敛到最优的，即使不是最优，也能使次优吧！
+
+## 混合高斯模型的拟合例子
+
+比如用混合高斯模型拟合一个多峰的数据分布，可以先用直方图查看一下数据分布情况，设置对应的混合高斯的高斯个数为2。
+
+```python
+# example of a bimodal constructed from two gaussian processes
+import numpy as np 
+from matplotlib import pyplot 
+from sklearn.mixture import GaussianMixture
+
+X1 = np.random.normal(loc=20, scale=5, size=3000)
+X2 = np.random.normal(loc=40, scale=5, size=7000)
+
+X = np.hstack((X1,X2))
+
+pyplot.hist(X, bins=50, density=True)
+pyplot.show()
+
+X = X.reshape((len(X), 1))
+
+model = GaussianMixture(n_components=2, init_params='random')
+model.fit(X)
+
+yhat = model.predict(X)
+print(yhat[:100])
+print(yhat[-100:])
+
+```
+
+
+
 ## 参考内容
 
 [https://machinelearningmastery.com/expectation-maximization-em-algorithm/](https://machinelearningmastery.com/expectation-maximization-em-algorithm/)
