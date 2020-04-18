@@ -1,15 +1,15 @@
 ---
 layout:       post
-title:        "【医学图像处理】MRI T1, T2 PD-加权成像"
-subtitle:     "MRI T1, T2 PD-加权成像"
-date:         2020-04-18 11:26:00
+title:        "【计算机视觉】如何用传统方法在小样本数据集上实现语义分割模型？"
+subtitle:     "如何用传统方法在小样本数据集上实现语义分割模型？"
+date:         2020-04-14 19:44:00
 author:       "ZhangPY"
 header-img:   "img/post-bg-os-metro.jpg"
 header-mask:  0.3
 catalog:      true
 multilingual: true
 tags:
-    - 医学图像处理
+    - 计算机视觉
 ---
 
 <!-- Chinese Version -->
