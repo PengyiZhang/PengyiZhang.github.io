@@ -14,7 +14,7 @@ tags:
 
 <!-- Chinese Version -->
 <div class="zh post-container">
-    {% capture about_zh %}{% include posts/2020-04-20-ct-devicefun2.md %}{% endcapture %}
+    {% capture about_zh %}{% include posts/2020-04-22-ct-devicefun2.md %}{% endcapture %}
     {{ about_zh | markdownify }}
 </div>
 
